@@ -51,8 +51,8 @@ for (var i = 0; i< names.length; i++) {
   // string object's 'toLowerCase' method on the result so we can compare
   // to lower case character 'j' afterwards.
   // Look up these methods on Mozilla Developer Network web site if needed.
-  names.push(names[i].toLowerCase());
-  var firstLetter =  names[i].charAt[0];
+  // names.push(names[i].toLowerCase());
+  var firstLetter =  names[i].charAt(0);
   
 
   // STEP 12:
@@ -60,10 +60,10 @@ for (var i = 0; i< names.length; i++) {
   // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
-  if (firstLetter = "j") {
-    byeSpeaker.speak;
+  if (firstLetter === "j" || firstLetter === "J") {
+    byeSpeaker.speak(names[i]);
   } else {
-    helloSpeaker.speak;
+    helloSpeaker.speak(names[i]);
   }
 }
 
